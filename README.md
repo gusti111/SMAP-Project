@@ -46,3 +46,14 @@ SMAP adalah aplikasi desktop yang dirancang untuk memproses dan mengompresi medi
 5. Jalankan Aplikasi:
    ```Bash
    python main.py
+
+📂 Struktur Folder
+   ```Plaintext
+   SMAP-Project/
+   ├── assets/         # Logo dan aset visual
+   ├── bin/            # Letakkan ffmpeg.exe dan ffprobe.exe di sini
+   ├── core/           # Logika pemrosesan media (VideoEngine)
+   ├── gui/            # File antarmuka PySide6
+   ├── main.py         # Entry point aplikasi
+   └── requirements.txt
+
