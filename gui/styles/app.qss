@@ -1,0 +1,40 @@
+/* gui/styles/app.qss */
+QMainWindow {
+    background-color: #121212;
+}
+
+QLabel, QTextEdit, QProgressBar {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    color: #e0e0e0;
+}
+
+QTextEdit {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+QPushButton {
+    background-color: #263238;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #37474f;
+}
+
+QProgressBar {
+    border: 2px solid #333;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #1e1e1e;
+}
+
+QProgressBar::chunk {
+    background-color: #00bcd4; /* Cyan modern */
+}
