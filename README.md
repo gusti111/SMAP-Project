@@ -49,11 +49,23 @@ SMAP adalah aplikasi desktop yang dirancang untuk memproses dan mengompresi medi
 
 📂 Struktur Folder
    ```Plaintext
-   SMAP-Project/
-   ├── assets/         # Logo dan aset visual
-   ├── bin/            # Letakkan ffmpeg.exe dan ffprobe.exe di sini
-   ├── core/           # Logika pemrosesan media (VideoEngine)
-   ├── gui/            # File antarmuka PySide6
-   ├── main.py         # Entry point aplikasi
-   └── requirements.txt
+     SMAP-Project/
+      ├── assets/         # Logo dan aset visual
+      ├── bin/            # Letakkan ffmpeg.exe dan ffprobe.exe di sini
+      ├── core/           # Logika pemrosesan media (VideoEngine)
+      ├── gui/            # File antarmuka PySide6
+      ├── main.py         # Entry point aplikasi
+      └── requirements.txt
 
+📝 Kontribusi
+Proyek ini dikembangkan secara terbuka. Jika kamu menemukan bug atau memiliki ide untuk optimasi engine, silakan buka issue atau kirim pull request.
+
+Dibuat oleh Gusti Faqikh
+
+
+### Tips Implementasi:
+1. **Asset Gambar:** Pastikan file logo kamu benar-benar berada di `assets/logo.png` agar gambar muncul di GitHub. Jika lokasinya berbeda, sesuaikan link pada bagian `![Logo SMAP](assets/logo.png)`.
+2. **FFmpeg:** Penjelasan di bagian Instalasi sangat krusial. Jika user tidak menaruh `ffmpeg.exe` di folder `bin/`, aplikasi akan *crash* saat mencoba memproses video. Ini adalah "kontrak" antara kamu dan user.
+3. **Penyimpanan:** Setelah kamu simpan file ini di GitHub, periksa tampilannya. Jika sudah muncul dengan baik, itu menandakan dokumentasi kamu sudah level profesional.
+
+Apakah ada detail fitur lain yang ingin kamu tambahkan, atau instruksi instalasi ini sudah mencakup kebutuhan user yang akan memakai kodemu?
