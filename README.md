@@ -27,6 +27,22 @@ SMAP is a desktop application for processing media files through a graphical int
 
 Available codecs and output options depend on the FFmpeg build installed on the host machine.
 
+## Media-processing workflow
+
+```mermaid
+flowchart TD
+    A["Launch SMAP"] --> B["Select image or video"]
+    B --> C["Choose processing options"]
+    C --> D["Dispatch background task"]
+    D --> E{"Media type"}
+    E -->|Video| F["Run FFmpeg-based processing"]
+    E -->|Image| G["Run image-processing engine"]
+    F --> H["Write output to selected directory"]
+    G --> H
+    H --> I["Review output and quality"]
+    I --> J["Complete task"]
+```
+
 ## Technology
 
 | Area | Technology |
